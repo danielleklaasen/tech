@@ -9,7 +9,7 @@
                 <div class="event-main-text">
                 <p class="event-text-1"> DormNerd </p>
                 <p class="event-text-2"> 23.04.2017 </p>
-                <p class="event-text-3"> In computer programming, event-driven programming is a programming paradigm in which the flow of the program is determined by events such as user actions (mouse clicks, key presses), sensor outputs, or messages from other programs/threads. </p>
+                <p class="event-text-3"> In computer programming, event-driven programming is a programming paradigm in which the flow of the program is determined by events such as user actions (mouse clicks, key presses), sensor outputs, or messages from other programs/threads. Find more about everything at our event. </p>
                 </div>
                 
                
