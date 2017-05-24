@@ -174,3 +174,12 @@
     font-size: 15px;
     font-weight: 100;
 }
+
+/*************************** CONTACT FORM ***************/
+
+.contact-form{
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    margin-top: 100px;
+}
