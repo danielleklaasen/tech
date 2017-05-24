@@ -291,3 +291,46 @@ $(document).on('click', '.btn-close-menu', function(){
 //
 //               Buddha bless the code
 //
+
+
+
+/********************************************************************************
+
+ Populate Events
+
+ ********************************************************************************/
+
+var eventNumber = 1;
+
+function createEvent(image, date, place, title, description){
+    var build="<div class='card card-1 single-event'>\
+        <div class='event-image'>\
+            <img src='dist/images/"+image+"'>\
+        </div>\
+        <div class='event-text'>\
+        <p class='event-date'>"+date+"</p>\
+        <p class='event-place'>"+place+"</p>\
+        <p class='event-title'>"+title+"</p>\
+        <p class='event-description'>"+description+"</p>\
+        </div>\
+    </div>";
+$(build).hide().appendTo("#event-container").fadeIn(250);
+eventNumber++;
+}
+
+
+
+
+function eventLoader(){
+
+    var displaySpeed = 500;
+
+    function basicEvent(){
+        return createEvent("img1.jpg", "23.04.2017", "Rebaek Sopark 5", "DormNerd", "Become a dorm nerd, learn how to cope with your issues and party like a crazy person");
+    };
+
+
+    for(var i=1;i<=3;i++){
+        setTimeout(basicEvent,displaySpeed*i);
+    }
+}
