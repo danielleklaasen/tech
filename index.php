@@ -9,6 +9,8 @@ require_once('templates/navigation.php');
 
 //insert content files
 require_once('templates/template.php');
+//require_once('templates/home.php');
+
 
 //insert scripts
 require_once('templates/scripts.php');
