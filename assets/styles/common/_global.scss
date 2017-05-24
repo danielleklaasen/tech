@@ -369,19 +369,19 @@ nav.main{
 }
 .wdw-login{
   .background-image {
-    background-image: url(../images/img28.jpg);
+    background-image: url(../images/img2.jpg);
   }
 }
 
 .wdw-example-2{
   .background-image{
-    background-image: url(../images/img26.jpg);
+    background-image: url(../images/img7.jpg);
   }
 }
 
 .wdw-example-3{
   &.background-image{
-    background-image: url(../images/img5.jpg);
+    background-image: url(../images/img1.jpg);
   }
 }
 .wdw-register, .wdw-login{
@@ -494,6 +494,7 @@ nav.main{
 ********************************************************************************/
 
 .background-image{
+  padding-top: 0;
   @include background-size(cover);
   background-position: center;
   //background-image: url(../assets/images/yourUrl.jpg);

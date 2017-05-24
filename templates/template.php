@@ -1,5 +1,5 @@
 <!-- TEMPLATE WINDOW -->
-<div class="wdw wdw-template base-color-bg open">
+<div class="wdw wdw-template base-color-bg">
     <div class="container">
         <!-- LOGO -->
         <section>
