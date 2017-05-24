@@ -4,10 +4,8 @@
         <!-- LOGO -->
         <section>
             <div class="center">
-                <img src="assets/logo.svg" alt />
+                <img src="assets/logo400.png" alt />
             </div>
-
-
         </section>
 
         <!-- TYPOGRAPHY -->
@@ -91,60 +89,7 @@
             <br><br>
             <a href="#" class="link-disappear-primary">Click here</a>
         </section>
-        <!-- ICONS -->
-        <section>
-            <h2 id="icons">Icons</h2>
-
-            <div>
-                <img class="icon-xs" src="assets/icons/animated/animat-compass.gif" alt>
-                <img class="icon" src="assets/icons/animated/animat-compass.gif" alt>
-                <img class="icon-large" src="assets/icons/animated/animat-compass.gif" alt>
-            </div>
-
-            <div>
-                <img class="icon-xs" src="assets/icons/animated/animat-road-trip.gif" alt>
-                <img class="icon" src="assets/icons/animated/animat-road-trip.gif" alt>
-                <img class="icon-large" src="assets/icons/animated/animat-road-trip.gif" alt>
-            </div>
-
-            <div>
-                <img class="icon-xs" src="assets/icons/animated/animat-sign-post.gif" alt>
-                <img class="icon" src="assets/icons/animated/animat-sign-post.gif" alt>
-                <img class="icon-large" src="assets/icons/animated/animat-sign-post.gif" alt>
-            </div>
-
-            <div>
-                <img class="icon-xs" src="assets/icons/animated/animat-day-night.gif" alt>
-                <img class="icon" src="assets/icons/animated/animat-day-night.gif" alt>
-                <img class="icon-large" src="assets/icons/animated/animat-day-night.gif" alt>
-            </div>
-
-            <div>
-                <img class="icon-xs" src="assets/icons/animated/animat-checkmark.gif" alt>
-                <img class="icon" src="assets/icons/animated/animat-checkmark.gif" alt>
-                <img class="icon-large" src="assets/icons/animated/animat-checkmark.gif" alt>
-            </div>
-
-            <div>
-                <img class="icon-xs" src="assets/icons/animated/animat-responsive.gif" alt>
-                <img class="icon" src="assets/icons/animated/animat-responsive.gif" alt>
-                <img class="icon-large" src="assets/icons/animated/animat-responsive.gif" alt>
-            </div>
-
-            <div>
-                <img class="icon-xs" src="assets/icons/animated/animat-rocket.gif" alt>
-                <img class="icon" src="assets/icons/animated/animat-rocket.gif" alt>
-                <img class="icon-large" src="assets/icons/animated/animat-rocket.gif" alt>
-            </div>
-
-            <div>
-                <img class="icon-xs" src="assets/icons/animated/animat-search.gif" alt>
-                <img class="icon" src="assets/icons/animated/animat-search.gif" alt>
-                <img class="icon-large" src="assets/icons/animated/animat-search.gif" alt>
-            </div>
-
-        </section>
-        <!-- FORMS -->
+         <!-- FORMS -->
         <section>
             <h2>Forms</h2>
 
@@ -173,20 +118,19 @@
         <h2>Design examples</h2>
 
         <section class="horizontal-vertical-center box example-text secondary-color-bg">
-            <h6>Results / Flight</h6>
-            <h1>Norwegian Airline rules</h1>
+            <h6>Results / Events</h6>
+            <h1>Need to know: developing for smartwatches</h1>
             <p>Tumblr stumptown marfa, slow-carb williamsburg tbh retro woke direct trade readymade cold-pressed pinterest twee. Twee shoreditch cornhole distillery la croix. Fingerstache stumptown hoodie pabst, paleo actually retro 3 wolf moon squid tote bag fixie. Tofu migas marfa subway tile, venmo waistcoat thundercats fanny pack retro jean shorts. Yr gochujang before they sold out succulents flexitarian, pour-over subway tile chia blue bottle. Meditation copper mug sartorial chillwave, food truck banh mi poke kinfolk XOXO. Tumblr flannel snackwave, tote bag unicorn try-hard food truck yr.</p>
             <hr>
             <p class="note"><span class="attention">Please consider</span> supporting the site to help make
                 it a sustainable and ad-free side project.</p>
         </section>
 
-        <section class="horizontal-vertical-center box example-find-flight"><h1><span class="bold">Finding flights...</span></h1><img class="icon-large" src="assets/icons/animated/animat-search.gif" alt></section>
 
         <section class="horizontal-vertical-center box example-landing highlight-color-bg secondary-color">
-            <h3>Fly light</h3>
-            <h1>We stress, you <span class="bold">relax</span></h1>
-            <a href="#" class="link-disappear-base">Search flights now</a>
+            <h3>TechCPH</h3>
+            <h1>Learn from the <span class="bold">best</span></h1>
+            <a href="#" class="link-disappear-base">Search events now</a>
         </section>
 
         <section class="gradient-1">.gradient-1</section>
