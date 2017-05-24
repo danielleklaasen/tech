@@ -1,0 +1,18 @@
+/******************************************************************
+
+Stylesheet: Sidebar / Widgets
+
+Table of contents
+
+  Footer
+
+******************************************************************/
+
+footer.main{
+  .widget{
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+  }
+}

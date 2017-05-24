@@ -1,0 +1,22 @@
+.fact-box{
+  position: relative;
+  background-color: rgba($accent1, 0.75);
+  //background-color: rgba($primary-color, 0.75);
+  @include box-shadow(20px);
+  @include flexbox();
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(space-between);
+  padding: 50px;
+  margin-bottom: 20px;
+  @include breakpoint(laptop) {
+    @include justify-content(space-around);
+  }
+  p{
+    color: $base-color;
+    &.number{
+      font-weight: bold;
+      font-size: 2em;
+    }
+  }
+}

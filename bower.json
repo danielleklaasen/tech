@@ -1,0 +1,13 @@
+{
+  "name": "TechCPH",
+  "homepage": "https://www.danielleklaasen.com/KEA/techcph/",
+  "authors": [
+    "Danielle Klaasen <danielleklaasen@gmail.com>",
+    "Bogdan Bele <bogdan.bele.dev@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "sass-flex-mixin": "1.0.3"
+  }
+}

@@ -1,0 +1,72 @@
+
+.main-nav{
+  z-index: 1000;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  @include breakpoint(laptop) {
+    height:100px;
+  }
+  background-color: transparent;
+  .container{
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(center);
+    .brand{
+      width: 80px;
+      @include breakpoint(laptop) {
+        width:100px;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .menu-btn{
+      @include breakpoint(laptop){
+        display: none; //menu button not visible on laptop
+      }
+    }
+    .nav-primary{
+      display: none;
+      &.open{
+       display: block;
+        #menu-main{
+          background-color: $primary-color;
+
+          width: 100vw;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+
+          @include flexbox();
+          @include flex-direction(column);
+          @include align-items(center);
+          @include justify-content(space-around);
+        }
+      }
+      @include breakpoint(laptop){
+        //show menu items separately on laptop
+        display: block;
+        #menu-main{
+          @include flexbox();
+          @include flex-direction(row);
+          li{
+            margin-right: 30px;
+            &:last-child{
+              margin-right: 0;
+            }
+            &:active{
+
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+

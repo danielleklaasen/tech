@@ -1,0 +1,67 @@
+
+/******************************************************************
+Interactive boxes
+******************************************************************/
+.squares-wrapper{
+  cursor: pointer;
+}
+.square-top{
+  background-color: rgba($base-color, 0.75);
+  height: 50px;
+  width: 50px;
+  transition: 1s;
+  &.change-background{
+    -moz-transform: translate(-5px, -5px);
+    -ms-transform: translate(-5px, -5px);
+    -o-transform: translate(-5px, -5px);
+    -webkit-transform: translate(-5px, -5px);
+    transform: translate(-5px, -5px);
+    background-color: rgba($base-color, 0.2);
+  }
+}
+.square-bottom{
+  margin-top: 10px;
+  margin-left: -35px;
+  background-color: rgba($base-color, 0.2);
+  height: 50px;
+  width: 50px;
+  transition: 0.3s;
+  &.change-background{
+    -moz-transform: translate(5px, 5px);
+    -ms-transform: translate(5px, 5px);
+    -o-transform: translate(5px, 5px);
+    -webkit-transform: translate(5px, 5px);
+    transform: translate(5px, 5px);
+    background-color: rgba($base-color, 0.75);
+  }
+  .box1-animate1{
+
+  }
+  .box2-animate1{
+
+  }
+}
+
+.square-top, .square-bottom{
+  float: left;
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx{
+  from {-webkit-transform:translate(0, 0px);}
+  65% {-webkit-transform:translate(0, 5px);}
+  to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating{
+  from {-moz-transform:translate(0, 0px);}
+  65% {-moz-transform:translate(0, 5px);}
+  to {-moz-transform: translate(0, -0px);}
+}

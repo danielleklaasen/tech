@@ -1,0 +1,112 @@
+/******************************************************************
+
+Stylesheet: Typography
+
+body font-size should be 100% (set to default of browser, most likely 16 px)
+
+CALCULATING EMS
+target ÷ context = result
+
+example:
+24 ÷ 16 = 1.5
+
+explanation: you want 24 px, base is 16 px.
+set styling to 1.5 em.
+
+***************************************************
+
+LINE HEIGHT
+Multiply your letter size by 1.618 and you will get perfect line height.
+
+
+******************************************************************/
+
+
+// font stacks
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+
+$rubik:       'Rubik', $sans-serif;
+$robotomono:  'Roboto Mono', monospace;
+
+body{
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $rubik;
+  color: $text-color;
+  line-height: 1.618em;
+  &.light{
+    color: $base-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+}
+
+
+h1{
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  @include breakpoint(tablet){
+    font-size: 3em;
+    letter-spacing: 0.4em;
+  }
+
+}
+
+p{
+  font-family: $robotomono;
+}
+
+header{
+  h1{
+
+  }
+  .sub-title{
+    font-weight: 200;
+    font-size: 1.1em;
+    @include breakpoint(tablet){
+      font-size: 1.3em;
+    }
+    .emphasis{
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+}
+
+p{
+  font-weight: normal;
+}
+
+a{
+  font-family: $robotomono;
+}
+
+.main-nav{
+  a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 0.875em;
+    &.light{
+      color: $base-color;
+    }
+  }
+  .light{
+    a{
+      color: $base-color;
+    }
+  }
+}
+
+
+
+
+
+
