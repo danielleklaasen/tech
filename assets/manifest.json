@@ -17,6 +17,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost:8888/tech/gulp/tech/"
+    "devUrl": "http://localhost/tech/"
   }
 }
