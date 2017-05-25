@@ -134,7 +134,7 @@ body{
   }
   &.secondary-overlay{
     @extend %full-width-height;
-    background-color: rgba($secondary-color, 0.7);
+    background-color: rgba($secondary-color, 0.75);
   }
 }
 /********************************************************************************

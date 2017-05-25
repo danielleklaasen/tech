@@ -20,3 +20,7 @@ node_modules/jpegtran-bin/vendor/jpegtran.exe
 node_modules/jpegtran-bin/vendor/libjpeg-62.dll
 
 dist/styles/main.css.map
+
+dist/styles/main.css
+
+dist/styles/main.css.map

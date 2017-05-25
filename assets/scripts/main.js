@@ -38,10 +38,6 @@ $(document).on('click', '.btn-wdw', function(){
     //open the target window
     var wdwClassToOpen = this.id; //get the id
 
-    if(wdwClassToOpen==='wdw-about'){
-        $('nav.main').addClass('light');
-    }
-
 
     var wdwSelector = $('.'+wdwClassToOpen);
 //open it on top of the document
@@ -174,7 +170,7 @@ $(document).on('click', '.btn-close', function(){
     //close wdw with matching class
     $('.'+wdwClassToClose).removeClass('open');
 
-    $('nav.main').removeClass('light');
+
 });
 
 /********************************************************************************
