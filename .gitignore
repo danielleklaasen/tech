@@ -18,3 +18,5 @@ dist/scripts/main.js.map
 node_modules/.bin/jpegtran.cmd
 node_modules/jpegtran-bin/vendor/jpegtran.exe
 node_modules/jpegtran-bin/vendor/libjpeg-62.dll
+
+dist/styles/main.css.map
