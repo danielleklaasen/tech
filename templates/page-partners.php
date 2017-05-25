@@ -64,7 +64,7 @@
 <div class="container">
     <section class="background-image partner-box  highlight-color-bg">
         <div class="background-image-overlay-highlight-color horizontal-vertical-center">
-        <a id="wdw-contact" href="javascript:void(0)" class="btn-wdw btn btn-2">Become a partner now</a>
+<!--        <a id="wdw-contact" href="javascript:void(0)" class="btn-wdw btn btn-2">Become a partner now</a>-->
         </div>
     </section>
 </div>
