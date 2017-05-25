@@ -9,3 +9,7 @@ assets/manifest.json
 dist/styles/main.css.map
 
 *.map
+
+*.map
+
+dist/scripts/main.js.map
