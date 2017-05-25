@@ -419,6 +419,7 @@ function eventLoader(){
 var menu=$("#side-menu");
 function animateMenu(){
 (menu).animate({
-        top: '20px'
+        bottom: '-=300'
     });
-    }
+}
+
