@@ -5,7 +5,7 @@
             <h1 class="big">Tech events in copenhagen</h1>
             <p class="emphasis">Improve your web skills and expand your network</p>
             <div class="button-container">
-                <a href="#event-container" class="btn btn-1">Events</a>
+                <a id="btn-events" href="#event-container" class="btn btn-1" data-smooth-scroll>Events</a>
                 <button id="wdw-partners" class="btn-wdw btn-3">Become a partner</button>
             </div>
         </div>
@@ -15,7 +15,6 @@
 
 
     <div class="container">
-        <h1>Home</h1>
 
         
     </div>
