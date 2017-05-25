@@ -107,6 +107,13 @@ hr{
   margin: 20px 0;
   border-top: 1px solid $primary-color;
   width: 100%;
+  &.primary-hr{
+      border-color: $highlight-color;
+  }
+}
+
+.full-width{
+  width: 100%;
 }
 
 .center{
@@ -387,10 +394,10 @@ nav.main{
   @include flex-direction(column);
   @include align-items(flex-start);
   h1, h3, a, h6, p{
-    color: $base-color;
+
   }
   hr{
-    border-color: $base-color;
+    border-color: $highlight-color;
   }
 }
 
@@ -429,13 +436,25 @@ nav.main{
   &.full-front-img{
     padding-top: 0;
   }
-  &.wdw-partners, &.wdw-about{
+  &.wdw-partners, &.wdw-about, &.wdw-event{
     padding-top: 0;
   }
 }
 .wdw-login{
   .background-image {
     background-image: url(../images/img2.jpg);
+  }
+}
+
+.wdw-about{
+  .background-image {
+    background-image: url(../images/img5.jpg);
+  }
+}
+
+.wdw-event{
+  .background-image {
+    background-image: url(../images/img1.jpg);
   }
 }
 
