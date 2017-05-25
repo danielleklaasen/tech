@@ -33,10 +33,10 @@ button, .btn{
   @include shutter-out-horizontal();
 }
 .btn-3{
-  background-color: $base-color;
   color: $highlight-color;
   border: 2px solid $highlight-color;
   @include radial-out();
+  background-color: transparent;
 }
 
 

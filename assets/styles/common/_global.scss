@@ -54,6 +54,9 @@ a{
   height: 100px;
 }
 
+body{
+  position: relative;
+}
 /********************************************************************************
 
  TABLE OF CONTENTS
@@ -129,7 +132,7 @@ nav.main{
   position: relative;
   z-index: 100;
   height: 120px;
-  background-color: $base-color;
+  background-color: transparent;
   transition: 0.5s all;
   width: 100%;
   .container{
@@ -171,6 +174,11 @@ nav.main{
         }
       }
     }
+    .menu-fold-out-list{
+      .menu-list{
+        background-color: rgba($base-color, 0.9);
+      }
+    }
   }
 }
 
@@ -209,9 +217,25 @@ nav.main{
     position: absolute;
     top: 30px;
     left: -100px;
-    background-color: rgba(#FFFFFF, 0.5);
+    background-color: rgba($base-color, 0.3);
+    border: 2px solid $highlight-color;
 
     display: none;
+    a{
+      color: $highlight-color;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+    hr{
+      border-color: $highlight-color;
+    }
+  }
+}
+
+.btn-home{
+  &:hover{
+    fill: $highlight-color;
   }
 }
 
@@ -225,7 +249,7 @@ nav.main{
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  border: 2px solid $primary-color;
+  border: 2px solid $highlight-color;
   .profile-icon{
     width: 15px;
   }
@@ -361,6 +385,9 @@ nav.main{
   &.open{
     display: block;
   }
+  &.full-front-img{
+    padding-top: 0;
+  }
 }
 .wdw-login{
   .background-image {
@@ -493,7 +520,11 @@ nav.main{
   @include background-size(cover);
   background-position: center;
   //background-image: url(../assets/images/yourUrl.jpg);
+  &.home{
+    background-image: url(../images/img19.jpg);
+  }
 }
+
 
 .image-half-width{
   height: 100vh;
@@ -511,26 +542,42 @@ nav.main{
 
 ********************************************************************************/
 
+.home{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
 .page-landing{
-  padding-top: 230px;
+  //padding-top: $header-height;
   margin: 0;
   text-align: center;
   position: relative;
-  div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 230px;
-    padding-top: 100px;
+  .content-home{
+    @include flexbox();
+    @include justify-content(center);
     @include align-items(center);
     @include flex-direction(column);
-
-    h1, h3, a{
-      color: $secondary-color;
+    h1, h3, a, p{
+      color: $highlight-color;
+    }
+    .button-container{
+      margin-top: 30px;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        button{
+          &:first-child{
+            margin-right: 15px;
+          }
+        }
     }
   }
+
   &.background-image{
-    background-image: url(../images/img15.jpg);
+    background-image: url(../images/img19.jpg);
   }
 }
 
@@ -561,7 +608,7 @@ nav.main{
   left: 0;
   &.background-image{
     background-image: url(../images/footer.jpg);
-    .background-image-overlay-base-color{
+    .background-image-overlay-light{
       @include flexbox();
       @include justify-content(center);
       p{

@@ -2,15 +2,15 @@
     <div class="container">
 
         <div class="menu-burger btn-menu">
-            <img src="http://f.cl.ly/items/1U2c3b1215383h3a2T2r/icon-menu.svg"/>
+            <img src="dist/images/icon-menu.png"/>
         </div>
 
         <div class="logo-container">
-            <img class="logo btn-home" src="dist/images/logo100.png" alt />
+            <img class="logo btn-home" src="dist/images/logo100-purple.png" alt />
         </div>
 
         <div class="menu-fold-out-list profile circle">
-            <img id="wdw-admin" class="profile-icon btn-wdw" src="dist/images/profile.svg" alt/>
+            <img id="wdw-admin" class="profile-icon btn-wdw" src="dist/images/profile.png" alt/>
             <div class="menu-list">
                 <a id="wdw-crudusers" href="javascript:void(0)" class="btn-wdw menu-item">Edit users</a>
                 <a id="wdw-crudevents" href="javascript:void(0)" class="btn-wdw menu-item">Edit events</a>
