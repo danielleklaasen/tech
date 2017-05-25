@@ -421,3 +421,9 @@ function eventLoader(){
         setTimeout(basicEvent,displaySpeed*i);
     }
 }
+var menu=$("#side-menu");
+function animateMenu(){
+(menu).animate({
+        top: '20px'
+    });
+    }

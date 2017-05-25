@@ -833,12 +833,11 @@ svg {
 /********************** Side Menu *****************/
 #side-menu{
     display: flex;
-    position: fixed;
-    z-index: 999;
+    position: absolute;
+    z-index: 2;
     justify-content: center;
     height: 100%;
     width: 300px;
-    background-color: #dde3e3;
  }
 
 #menu-slider{
