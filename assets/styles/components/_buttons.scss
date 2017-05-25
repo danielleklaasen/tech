@@ -13,6 +13,7 @@ button, .btn{
   background-color: $primary-color;
   color: $base-color;
   @include border-radius(2px);
+  line-height: 45px;
   &:active, &:focus{
     outline: none;
   }

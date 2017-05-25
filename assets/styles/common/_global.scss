@@ -563,12 +563,22 @@ nav.main{
     h1, h3, a, p{
       color: $highlight-color;
     }
+    .btn{
+      color: $secondary-color;
+    }
+    h1{
+      font-size: 2.8em;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size: 1em;
+    }
     .button-container{
       margin-top: 30px;
         @include flexbox();
         @include flex-direction(row);
         @include justify-content(space-between);
-        button{
+        .btn{
           &:first-child{
             margin-right: 15px;
           }
@@ -608,7 +618,7 @@ nav.main{
   left: 0;
   &.background-image{
     background-image: url(../images/footer.jpg);
-    .background-image-overlay-light{
+    .background-image-overlay-dark{
       @include flexbox();
       @include justify-content(center);
       p{
