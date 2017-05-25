@@ -1,10 +1,14 @@
 a{
   color: $primary-color;
-  font-family: 'Work Sans', sans-serif;
+  font-family: $body-font;
   font-weight: 400;
   text-decoration: none;
-  font-size: 1.1em; //bigger than the rest
+  font-size: 0.875em; //14/16px
   text-transform: capitalize;
+  transition: 0.2s;
+  &:hover{
+    color: $highlight-color;
+  }
 }
 
 .link-appear-base{
@@ -193,6 +197,21 @@ nav.main{
         margin-right: 50px;
       }
     }
+  }
+}
+
+.menu-fold-out-list{
+  position: relative;
+  .menu-list{
+    border-radius: 2px;
+    padding: 5px;
+    width: 120px;
+    position: absolute;
+    top: 30px;
+    left: -100px;
+    background-color: rgba(#FFFFFF, 0.5);
+
+    display: none;
   }
 }
 

@@ -269,7 +269,7 @@ $(document).on('click', 'a', function(event){
 $(document).on('click', '.btn-home', function(){
     //close all windows
     $('.wdw').removeClass('open');
-    $('.wdw-flight').addClass('open');
+    $('.wdw-home').addClass('open');
     $('nav.main').removeClass("nav-small");
 });
 
@@ -283,6 +283,31 @@ $(document).on('click', '.menu-item', function(){
 $(document).on('click', '.btn-close-menu', function(){
     $('.menu').hide();
 });
+
+//fold out always closed by default
+var menuClose = true;
+
+$(document).on('mouseenter', '.menu-fold-out-list', function(){
+    $('.menu-list').show();
+});
+$(document).on('mouseover', '.menu-list', function(){
+    $('.menu-list').show();
+    menuClose=false;
+});
+
+$(document).on('mouseleave', '.menu-fold-out-list', function(){
+  setTimeout(function(){
+      if(menuClose===true){
+         $('.menu-list').fadeOut();
+      }
+  },200);
+
+});
+$(document).on('mouseleave', '.menu-list', function(){
+    menuClose=true;
+});
+
+
 
 //
 //                       _oo0oo_
