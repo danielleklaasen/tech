@@ -389,11 +389,35 @@ function eventLoader(){
     var displaySpeed = 500;
 
     function basicEvent(){
-        return createEvent("img1.jpg", "23.04.2017", "Rebaek Sopark 5", "DormNerd", "Become a dorm nerd, learn how to cope with your issues and party like a crazy person");
-    };
+        
+    if(eventNumber==1){
+        return createEvent("img1.jpg", "23.04.2017", "Rebaek Sopark 5", 
+        "DormNerd", "Become a dorm nerd, learn how to cope with your issues and party like a crazy person");
+    }
+    else if(eventNumber==2){
+        return createEvent("img4.jpg", "15.05.2017", "Esromgade 15",
+         "React on Web", "Monthly meetup in the cosiest district of Copenhagen. ReactJS.");
+    }
+    else if(eventNumber==3){
+        return createEvent("img5.jpg", "31.05.2017", "Rainmaking Loft",
+         "UX today", "Users bring you revenue, so why not follow those laws to enhance your website ?  ");
+    }
+    else if(eventNumber==4){
+        return createEvent("img6.jpg", "27.07.2017", "NorrebroGade",
+         "Flat Design", "The future is today, with a lot of help from this fantastic style.");
+    }
+    else if(eventNumber==5){
+        return createEvent("img7.jpg", "05.08.2017", "Peter Bangs Vej 5",
+         "HomeBrew", "Tutorials can make the difference ! Learn everything from home with our app.");
+    }
+    else if(eventNumber==6){
+        return createEvent("img8.jpg", "22.08.2017", "Lygten 37",
+         "Life after 12", "The story of a student who passedd all the exams with 12s.");
+    }
+};
 
 
-    for(var i=1;i<=3;i++){
+    for(var i=1;i<=6;i++){
         setTimeout(basicEvent,displaySpeed*i);
     }
 }
