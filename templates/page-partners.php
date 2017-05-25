@@ -2,8 +2,9 @@
 <div class="wdw wdw-partners base-color-bg">
 
         <section class="horizontal-vertical-center landing-box example-text secondary-color-bg">
+            <div class="header-space"></div>
             <h6>TechCPH Partner <i class="fa fa-angle-right" aria-hidden="true"></i></h6>
-            <h1>Share your knowledge and improve your network</h1>
+            <h1>Be a part of our tech community</h1>
             <p class="emphasis">
                 Hoodie everyday carry stumptown green juice. Fingerstache tumblr cronut crucifix, trust fund mumblecore woke XOXO tattooed letterpress ennui humblebrag cornhole. Copper mug iPhone helvetica gluten-free mlkshk narwhal, <span class="attention-highlight">most of all it's a lot of fun</span> tbh squid vexillologist pok pok actually woke small batch.</p>
             <hr>
@@ -28,7 +29,7 @@
     </div>
     <div class="partener card card-1">
         <svg class="bigSVG"  height="100px" width="168px" id="Layer_1"  version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
-	
+
 </style><g id="XMLID_1085_"><path class="st0" d="M221.6,173.5c-3.5,0-6.4,2.9-6.4,6.4c0,3.5,2.9,6.4,6.4,6.4c3.5,0,6.4-2.9,6.4-6.4   C228,176.4,225.1,173.5,221.6,173.5z" id="XMLID_457_"/><path class="st0" d="M289.6,173.5c-3.5,0-6.3,2.9-6.3,6.4c0,3.5,2.8,6.4,6.3,6.4c3.6,0,6.4-2.9,6.4-6.4   C295.9,176.4,293.1,173.5,289.6,173.5z" id="XMLID_456_"/><path class="st0" d="M256,85.3c-94.2,0-170.7,76.4-170.7,170.6c0,94.3,76.4,170.7,170.7,170.7   c94.3,0,170.7-76.4,170.7-170.7C426.7,161.7,350.3,85.3,256,85.3z M224.5,153.4l-11.7-21.8l2.5-1.3l11.8,21.9   c8.8-4.2,18.6-6.6,29-6.6c11,0,21.3,2.6,30.5,7.3l12.1-22.6l2.5,1.3l-12.1,22.6c20.2,11.5,33.9,33.1,34.1,58H189.1   C189.2,186.7,203.5,164.7,224.5,153.4z M178.4,289.2c0,6.2-5.1,11.3-11.3,11.3c-6.3,0-11.3-5.1-11.3-11.3v-54.8   c0-6.3,5.1-11.3,11.3-11.3c6.3,0,11.3,5,11.3,11.3V289.2z M323.7,324.6c0,9.4-7.6,17-17,17h-18.2v28.8c0,6.2-5.1,11.3-11.3,11.3   c-6.2,0-11.3-5.1-11.3-11.3v-28.8h-19.4v28.8c0,6.2-5.1,11.3-11.3,11.3c-6.3,0-11.3-5.1-11.3-11.3v-28.8h-18.2c-9.4,0-17-7.6-17-17   V223.5c0-0.2,0-0.3,0-0.4h135c0,0.2,0.1,0.3,0.1,0.4V324.6z M356.3,289.2c0,6.2-5.1,11.3-11.4,11.3c-6.2,0-11.3-5.1-11.3-11.3   v-54.8c0-6.3,5.1-11.3,11.3-11.3c6.3,0,11.4,5,11.4,11.3V289.2z" id="XMLID_1086_"/></g></svg>
     </div>
     <div class="partener card card-1">
@@ -60,14 +61,13 @@
     </div>
     </div>
 
-
+<div class="container">
     <section class="background-image partner-box  highlight-color-bg">
-
         <div class="background-image-overlay-highlight-color horizontal-vertical-center">
         <a id="wdw-contact" href="javascript:void(0)" class="btn-wdw btn btn-2">Become a partner now</a>
         </div>
     </section>
-
+</div>
     <?php
     //INSERT FOOTER
     include('templates/footer.php');
