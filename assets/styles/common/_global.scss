@@ -162,6 +162,10 @@ nav.main{
         width: 1.25em;
       }
     }
+
+  }
+  &.light{
+    background-color: rgba($secondary-color,0.8);
   }
   &.nav-small{
     background-color: rgba($base-color, 0.8);
@@ -340,6 +344,7 @@ nav.main{
 .landing-box{
   @extend %box;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .parteners-container{
@@ -363,7 +368,8 @@ nav.main{
 
 .example-text{
   width: 100%;
-  padding: 10%;
+  height: 100vh;
+  padding: 0 10%;
   @include flex-direction(column);
   @include align-items(flex-start);
   h1, h3, a, h6, p{
@@ -371,6 +377,20 @@ nav.main{
   }
   hr{
     border-color: $highlight-color;
+  }
+}
+
+.about-text{
+  width: 100%;
+  height: 100vh;
+  padding: 0 10%;
+  @include flex-direction(column);
+  @include align-items(flex-start);
+  h1, h3, a, h6, p{
+    color: $base-color;
+  }
+  hr{
+    border-color: $base-color;
   }
 }
 
@@ -409,7 +429,7 @@ nav.main{
   &.full-front-img{
     padding-top: 0;
   }
-  &.wdw-partners{
+  &.wdw-partners, &.wdw-about{
     padding-top: 0;
   }
 }
@@ -566,7 +586,15 @@ nav.main{
   left: 0;
   @extend %card-shadow-2;
 }
+.content-half-width{
+  position: fixed;
+  height: 100vh;
+  width: 50vw;
 
+  top: 0;
+  left: 50vw;
+  @include flex-direction(column);
+}
 
 /********************************************************************************
 
@@ -635,7 +663,15 @@ nav.main{
     border-color: $highlight-color;
   }
 }
+/********************************************************************************
 
+                                  CONTACT FORM
+
+********************************************************************************/
+
+form{
+  margin-top: 0;
+}
 
 /********************************************************************************
 

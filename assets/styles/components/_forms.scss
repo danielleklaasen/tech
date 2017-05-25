@@ -25,7 +25,7 @@ textarea,
   width: 100%;
   max-width:400px;
   height: 30px;
-  @include border($primary-color);
+  @include border($highlight-color);
   // a focused input (or hovered on)
   &:focus,
   &:active {
@@ -52,7 +52,9 @@ input[type="password"] {
 }
 
 // textareas
+
 textarea {
+  background-color: transparent;
   min-height: 150px;
   //line-height: 1.5em;
   //padding-top: 5px;
@@ -63,10 +65,12 @@ textarea {
  ********************************************************************************/
 input{
   font-size: 1em /* 16px */;
-  font-family: 'Work Sans', sans-serif;
+  font-family: $body-font;
+
 }
 
 form{
+  margin-top: 0 !important;
   div{
     position: relative;
     margin: 5px 0;
@@ -89,18 +93,22 @@ form{
     .field {
       margin: 0;
       height: 45px;
+      background-color: transparent;
+      font-family: $body-font;
     }
     label{
       position: absolute;
       left: 10px;
-      top: 8px;
+      top: 10px;
       opacity: 0.8;
       transition: 0.2s all;
+      color: $highlight-color;
+      font-family: $body-font;
       &.active{
         left: 10px;
-        top: 4px;
+        top: 1px;
         opacity: 1;
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
     }
   }
@@ -116,19 +124,22 @@ form{
       background-color: rgba($base-color, 0.5);
 
     }
-    label{
-      top: 15px;
-      &.active{
-        font-size: 0.8em;
-        opacity: 0.5;
-      }
-    }
+  }
+  input[type="submit"] {
+    width: 250px;
   }
 }
 input{
   &.floating-label{
-    width: 95% !important;
-    padding-left: 5% !important;
+    width: 100%;
+    padding-left: 7px;
+    padding-top: 5px;
   }
 }
 
+.contact-form{
+  width: 300px;
+  input, div{
+    width: 100%;
+  }
+}

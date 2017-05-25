@@ -87,6 +87,10 @@ p{
     background-color: $highlight-color;
     color: $secondary-color;
   }
+  .attention-secondary{
+    background-color: $secondary-color;
+    color: $highlight-color;
+  }
   &.note{
     font-size: 0.875em;
   }

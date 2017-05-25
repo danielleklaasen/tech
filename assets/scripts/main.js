@@ -37,13 +37,23 @@ $(document).on('click', '.btn-wdw', function(){
 
     //open the target window
     var wdwClassToOpen = this.id; //get the id
-    console.log(wdwClassToOpen);
+
+    if(wdwClassToOpen==='wdw-about'){
+        $('nav.main').addClass('light');
+    }
+
+
     var wdwSelector = $('.'+wdwClassToOpen);
+//open it on top of the document
+    wdwSelector.animate({
+        scrollTop: wdwSelector.offset().top
+    });
     //open matching window
     wdwSelector.addClass('open');
 
     //if there is a halfwidth image, animate it
     $('.'+wdwClassToOpen + ' .image-half-width').addClass('animated slideInLeft');
+    $('.'+wdwClassToOpen + ' .content-half-width').addClass('animated zoomInRight');
     if (!populated){
         if ( wdwClassToOpen == "wdw-home"){
                 eventLoader();  
@@ -163,6 +173,8 @@ $(document).on('click', '.btn-close', function(){
 
     //close wdw with matching class
     $('.'+wdwClassToClose).removeClass('open');
+
+    $('nav.main').removeClass('light');
 });
 
 /********************************************************************************

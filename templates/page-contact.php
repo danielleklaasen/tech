@@ -3,12 +3,8 @@
     <div class="background-image image-half-width">
         <div class="background-image-overlay-secondary-color">
     </div>
-
-
-    <div class="container">
-    <h1>Contact</h1>
-    </div>
-    <div class="contact-container">
+    <div class="content-half-width horizontal-vertical-center">
+            <h1 class="highlight-color">Say Hello!</h1>
             <form class="contact-form">
                 <div>
                     <input type="text" id="name" name="name" class="floating-label">
@@ -21,8 +17,11 @@
                 </div>
 
                 <textarea></textarea><br>
-                <input type="submit" value="Send" class="btn">
+                <input type="submit" value="Send" class="btn btn-1">
             </form>
     </div>
+
+
+
 </div>
 </div>

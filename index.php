@@ -18,6 +18,8 @@ require_once('templates/page-crud-events.php');
 require_once('templates/page-crud-user.php');
 require_once('templates/page-event.php');
 require_once('templates/page-partners.php');
+require_once('templates/page-login.php');
+require_once('templates/page-register.php');
 
 
 //insert scripts
