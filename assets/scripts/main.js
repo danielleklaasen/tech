@@ -30,12 +30,14 @@ var populated = false;
  Open window
  ********************************************************************************/
 $(document).on('click', '.btn-wdw', function(){
+
     //set all windows to close
     $('.wdw').removeClass('open');
 
 
     //open the target window
     var wdwClassToOpen = this.id; //get the id
+    console.log(wdwClassToOpen);
     var wdwSelector = $('.'+wdwClassToOpen);
     //open matching window
     wdwSelector.addClass('open');

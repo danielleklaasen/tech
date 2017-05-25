@@ -1,5 +1,10 @@
 <!-- CONTACT WINDOW -->
 <div class="wdw wdw-contact base-color-bg">
+    <div class="background-image image-half-width">
+        <div class="background-image-overlay-secondary-color">
+    </div>
+
+
     <div class="container">
     <h1>Contact</h1>
     </div>
@@ -19,4 +24,5 @@
                 <input type="submit" value="Send" class="btn">
             </form>
     </div>
+</div>
 </div>
