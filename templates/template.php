@@ -1,33 +1,19 @@
 <!-- TEMPLATE WINDOW -->
 <div class="wdw wdw-template base-color-bg">
     <div class="container">
-        <!-- LOGO -->
-        <section>
-            <div class="center">
-                <img src="assets/logo400.png" alt />
-            </div>
-        </section>
-
         <!-- TYPOGRAPHY -->
         <section>
 
-            <h1>H1</h1>
-            <h1><span class="bold">H1 .bold </span></h1>
-            <h1>Example of a title with a <span class="bold"> highlight</span>. </h1>
-            <h2>H2</h2>
-            <h3>H3</h3>
-            <h4>H4</h4>
-            <h5>H5</h5>
-
-            <br>
-
-            <h6>Title</h6>
+            <h1>H1 Title</h1>
+            <h2>H2 Title</h2>
+            <h3>H3 Title</h3>
+            <h4>H4 Title</h4>
+            <h5>H5 Title</h5>
+            <h6>H6 Title</h6>
 
             <br>
 
             <p class="emphasis">Bespoke narwhal biodiesel, ethical before they sold out crucifix gochujang polaroid lo-fi truffaut yuccie pinterest deep v vice. Fixie pickled hexagon PBR&B gastropub, activated charcoal master cleanse kinfolk ugh ramps. Offal tbh cronut hella, shoreditch skateboard you probably haven't heard of them literally church-key hot chicken mumblecore jianbing tofu. Art party YOLO try-hard pour-over. Succulents shoreditch whatever, pitchfork 8-bit vexillologist taxidermy woke pug put a bird on it brunch. Austin meh food truck, vegan sartorial selfies pickled. Glossier heirloom sustainable cardigan.</p>
-
-            <br>
 
             <p>90's art party twee fanny pack, artisan chicharrones taxidermy vinyl beard deep v. Banjo tousled street art neutra, pinterest fam microdosing cronut VHS. Selfies wayfarers af ugh VHS. Pork belly cold-pressed chambray chicharrones. Craft beer migas jianbing, copper mug small batch brooklyn vinyl celiac pitchfork. Wolf gastropub everyday carry shoreditch, mumblecore lyft photo booth lumbersexual pinterest kogi scenester viral. Edison bulb gentrify craft beer, venmo green juice aesthetic retro sustainable hot chicken flexitarian before they sold out shabby chic biodiesel hexagon DIY.</p>
 
@@ -36,10 +22,6 @@
             <p class="note"><span class="attention">Please consider</span> supporting the site to help make
                 it a sustainable and ad-free side project</p>
 
-            <hr>
-
-            <p class="sub"><span class="attention">PLEASE, NOTE!</span> This year has earned itself quite the
-                reputation. It may not be the worst year… </p>
 
         </section>
         <!-- COLOURS -->
@@ -76,7 +58,7 @@
         <!-- BUTTONS -->
         <section>
 
-            <button class="btn">Button 1</button>
+            <button class="btn btn-animation">Button 1</button>
             <button class="btn-1">Button 2</button>
             <button class="btn-2">Button 3</button>
             <button class="btn-3">Button 4</button>
@@ -89,6 +71,24 @@
             <br><br>
             <a href="#" class="link-disappear-primary">Click here</a>
         </section>
+
+        <!-- LOGOS -->
+        <section>
+            <h2>Logos</h2><br>
+
+                <div class="center">
+                    <img src="dist/images/logonoborder.png" alt />
+                </div>
+                <div class="center">
+                    <img src="dist/images/logo400.png" alt />
+                </div>
+                <div class="center">
+                    <img src="dist/images/logo100.png" alt />
+                </div>
+
+        </section>
+
+
          <!-- FORMS -->
         <section>
             <h2>Forms</h2>
@@ -107,34 +107,23 @@
                 <textarea></textarea><br>
                 <input type="submit" value="Send" class="btn">
             </form>
-
-            <div class="controls full">
-                <input type="tel" id="cell" class="floatLabel" name="cell">
-                <label for="cell">Celly</label>
-            </div>
         </section>
 
         <!-- DESIGN EXAMPLES -->
         <h2>Design examples</h2>
 
         <section class="horizontal-vertical-center box example-text secondary-color-bg">
-            <h6>Results / Events</h6>
-            <h1>Need to know: developing for smartwatches</h1>
-            <p>Tumblr stumptown marfa, slow-carb williamsburg tbh retro woke direct trade readymade cold-pressed pinterest twee. Twee shoreditch cornhole distillery la croix. Fingerstache stumptown hoodie pabst, paleo actually retro 3 wolf moon squid tote bag fixie. Tofu migas marfa subway tile, venmo waistcoat thundercats fanny pack retro jean shorts. Yr gochujang before they sold out succulents flexitarian, pour-over subway tile chia blue bottle. Meditation copper mug sartorial chillwave, food truck banh mi poke kinfolk XOXO. Tumblr flannel snackwave, tote bag unicorn try-hard food truck yr.</p>
+            <h6>TechCPH Events <i class="fa fa-angle-right" aria-hidden="true"></i></h6>
+            <h1>Expand your knowledge and improve your network</h1>
+            <p class="emphasis">HTML is the the foundation behind all web pages. It's used to add structure and form to text, images, and more. CSS is the language used to style HTML content. In this first course, you'll  <span class="attention-highlight">learn the fundamentals of both languages</span> so that you can create visually appealing web pages.</p>
             <hr>
-            <p class="note"><span class="attention">Please consider</span> supporting the site to help make
-                it a sustainable and ad-free side project.</p>
+            <p class="note">
+                Checkout these advanced HTML and CSS lessons to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.
+               </p>
         </section>
 
-
-        <section class="horizontal-vertical-center box example-landing highlight-color-bg secondary-color">
-            <h3>TechCPH</h3>
-            <h1>Learn from the <span class="bold">best</span></h1>
-            <a href="#" class="link-disappear-base">Search events now</a>
-        </section>
-
-        <section class="gradient-1">.gradient-1</section>
-        <section class="gradient-2">.gradient-2</section>
+        <section class="gradient-1"><p>.gradient-1</p></section>
+        <section class="gradient-2"><p>.gradient-2</p></section>
         <!-- GOOGLE MAPS -->
         <section>
             <h2>Maps</h2>
