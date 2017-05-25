@@ -128,7 +128,12 @@ hr{
   height: 100px;
 }
 
-
+.noshow-mobile{
+  display: none;
+  @include breakpoint-mf(tablet){
+    display: block;
+  }
+}
 /********************************************************************************
 
                                   NAVIGATION
@@ -209,13 +214,25 @@ nav.main{
   background-color: rgba($secondary-color, 0.9);
   .button-container{
     @include flexbox();
-    @include flex-direction(row);
-    @include justify-content(space-between);
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
     button{
       &:first-child{
-        margin-right: 50px;
+        margin-bottom: 5px;
       }
     }
+    @include breakpoint-mf(mobilelandscape){
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      button{
+        &:first-child{
+          margin-right: 50px;
+          margin-bottom: 0;
+        }
+      }
+    };
+
   }
 }
 
@@ -375,7 +392,7 @@ nav.main{
 
 .example-text{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 10%;
   @include flex-direction(column);
   @include align-items(flex-start);
@@ -480,6 +497,16 @@ nav.main{
 .wdw-contact{
   .background-image {
     background-image: url(../images/img4.jpg);
+    display: none;
+    @include breakpoint-mf(tablet){
+      display: block;
+    }
+  }
+  .content-half-width{
+    left:27%;
+    @include breakpoint-mf(tablet){
+      left:50vw;
+    }
   }
 }
 
@@ -646,22 +673,42 @@ nav.main{
       color: $secondary-color;
     }
     h1{
-      font-size: 2.8em;
+      font-size: 2.2em;
+      @include breakpoint-mf(tablet){
+        font-size: 2.8em;
+      }
       margin-bottom: 5px;
     }
     p{
-      font-size: 1em;
+      @include breakpoint-mf(tablet){
+        font-size: 1em;
+      }
+
     }
     .button-container{
       margin-top: 30px;
+      width: 100%;
+      button, .btn{
+        width: 100%;
+
+      }
+      .btn{
+        &:first-child{
+          margin-bottom: 5px;
+        }
+      }
+      @include breakpoint-mf(mobilelandscape){
+        width: 515px;
         @include flexbox();
         @include flex-direction(row);
         @include justify-content(space-between);
         .btn{
           &:first-child{
             margin-right: 15px;
+            margin-bottom: 0;
           }
         }
+      }
     }
   }
 

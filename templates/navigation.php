@@ -27,7 +27,7 @@
     <div class="btn-close-menu"></div>
 
     <a id="wdw-home" href="javascript:void(0)" class="btn-wdw menu-item">Events</a>
-    <a id="wdw-event" href="javascript:void(0)" class="btn-wdw menu-item">// single event</a>
+    <!--<a id="wdw-event" href="javascript:void(0)" class="btn-wdw menu-item">// single event</a>-->
     <a id="wdw-partners" href="javascript:void(0)" class="btn-wdw menu-item">partners</a>
     <a id="wdw-about" href="javascript:void(0)" class="btn-wdw menu-item">about</a>
     <a id="wdw-contact" href="javascript:void(0)" class="btn-wdw menu-item">contact</a>

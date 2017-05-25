@@ -1,8 +1,8 @@
 /*********************
 BREAKPOINTS
 *********************/
-/*
-@mixin breakpoint($point) {
+
+@mixin breakpoint-mf($point) {
   @if $point == desktop {
     @media (min-width: 1200px) { @content ; }
   }
@@ -15,7 +15,7 @@ BREAKPOINTS
   @else if $point == mobilelandscape {
     @media (min-width: 480px)  { @content ; }
   }
-}*/
+}
 
 @mixin breakpoint($point) {
   @if $point == mobile {

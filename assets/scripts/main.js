@@ -38,7 +38,6 @@ $(document).on('click', '.btn-wdw', function(){
     //open the target window
     var wdwClassToOpen = this.id; //get the id
 
-
     var wdwSelector = $('.'+wdwClassToOpen);
 //open it on top of the document
     wdwSelector.animate({
