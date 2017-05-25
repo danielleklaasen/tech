@@ -1,10 +1,11 @@
 %btn{
   border: 2px solid $primary-color;
-  padding: 15px;
-  font-weight: 300;
   cursor: pointer;
-  width: 100px;
+  width: 200px;
   text-align: center;
+  font-family: $body-font;
+  font-size:0.875em;
+  height:50px;
 }
 
 button, .btn{

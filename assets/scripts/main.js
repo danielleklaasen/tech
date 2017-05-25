@@ -151,12 +151,17 @@ $(document).on('click', '.btn-close', function(){
     for(var i = 0; i < wdwClassList.length; i++){
         if (wdwClassList[i].match("^wdw-")) { // class begins with wdw-
             var wdwClassToClose = wdwClassList[i]; //save this class
+
+
+            if (wdwClassList[i].match("^wdw-example-")) {
+                $('.wdw-template').addClass('open');
+            }
+
         }
     }
 
     //close wdw with matching class
     $('.'+wdwClassToClose).removeClass('open');
-
 });
 
 /********************************************************************************
