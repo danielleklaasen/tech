@@ -1,9 +1,19 @@
 <!-- PARTNERS WINDOW -->
 <div class="wdw wdw-partners base-color-bg">
     <div class="container">
-    <h1>Partners</h1>
-    </div>
+        <section class="horizontal-vertical-center box example-text secondary-color-bg">
+            <h6>TechCPH Partner <i class="fa fa-angle-right" aria-hidden="true"></i></h6>
+            <h1>Share your knowledge and improve your network</h1>
+            <p class="emphasis">
+                Hoodie everyday carry stumptown green juice. Fingerstache tumblr cronut crucifix, trust fund mumblecore woke XOXO tattooed letterpress ennui humblebrag cornhole. Copper mug iPhone helvetica gluten-free mlkshk narwhal, <span class="attention-highlight">most of all it's a lot of fun</span> tbh squid vexillologist pok pok actually woke small batch.</p>
+            <hr>
+            <p class="note">
+                Hell of paleo schlitz, quinoa actually flexitarian umami fashion axe helvetica sriracha. Lomo artisan whatever, occupy actually chartreuse literally before they sold out gentrify umami keytar edison bulb cloud bread.
+            </p>
+        </section>
 
+<h2 class="highlight-color">Our partners / sponsors</h2>
+    </div>
     <div class="parteners-container card card-1">
     <div class="parteners-center">
     <div class="partener card card-1">
@@ -37,4 +47,6 @@
     </div>
     </div>
     </div>
+
+
 </div>
