@@ -7,3 +7,5 @@ assets/manifest.json
 
 assets/manifest.json
 dist/styles/main.css.map
+
+*.map
