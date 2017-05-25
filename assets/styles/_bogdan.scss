@@ -12,6 +12,13 @@
     width: 22vw;
     padding: 1.5vw;
     margin-left: 5vw;
+     
+    @include breakpoint(tablet) {
+        width: 40vw;
+    }
+    @include breakpoint(mobile) {
+        width: 100vw;
+    }
 }
 
 .single-event p {
