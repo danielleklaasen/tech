@@ -306,11 +306,11 @@ $(document).on('mouseleave', '.menu-list', function(){
     menuClose=true;
 });
 
-var bEventsLoaded = false;
+
 $(document).on('click', '#btn-events', function(){
-    if(!bEventsLoaded){
-        eventLoader();
-        bEventsLoaded=true;
+    if(!populated){
+                eventLoader();  
+                populated = true;
     }
 });
 
