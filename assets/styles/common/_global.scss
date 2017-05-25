@@ -141,23 +141,12 @@ nav.main{
     .logo-container{
       cursor: pointer;
       position: relative;
-      .logo, .airplane{
-        height: auto;
-
-      }
-      .airplane{
-        position: absolute;
-        width: 30px;
-        top: 36px;
-        left: 20px;
-        //on the way up
-        transition: 0.2s all;
-      }
       .logo{
         //the logo without the airplane
-        width: 200px;
+        width: 80px;
+        height: auto;
         //on the way up
-        transition: 1s all;
+        transition: 0.5s all;
       }
     }
     .menu-burger {
@@ -173,20 +162,10 @@ nav.main{
     .container{
       height: 70px;
       .logo-container{
-
         .logo{
-          //on the way down
-          transition: 0.2s all;
-          opacity: 0;
-        }
-        .airplane{
-          top: 40%;
-          left: 43%;
-          //on the way down
-          transition: 0.7s all;
+          width:60px;
         }
       }
-
     }
   }
 }
@@ -229,7 +208,7 @@ nav.main{
   border-radius: 10px;
   border: 2px solid $primary-color;
   .profile-icon{
-    width: 19px;
+    width: 15px;
   }
 }
 
