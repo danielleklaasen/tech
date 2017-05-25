@@ -13,3 +13,5 @@ dist/styles/main.css.map
 *.map
 
 dist/scripts/main.js.map
+
+dist/scripts/main.js.map
