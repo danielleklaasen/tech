@@ -809,5 +809,17 @@ height: 90%;
   height: 28%;
   margin: 1%;
 
-  background-color: $highlight-color;
+  background-color: $secondary-color;
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+path{  
+  fill: $highlight-color;
+  width: 70px;
+  height: 70px;
+}
+
+.st0{
+  fill: $highlight-color;
 }
