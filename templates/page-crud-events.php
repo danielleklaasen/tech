@@ -1,8 +1,8 @@
 <!-- CRUD EVENTS WINDOW -->
 <div class="wdw wdw-crudevents base-color-bg">
     <div class="container">
-        <h1>Crud events</h1>
-    </div>
+        <h1 class="highlight-color">Event overview</h1>
+<br>
 
 
  <div class="table-responsive-vertical shadow-z-1">
@@ -62,4 +62,6 @@
       </tbody>
     </table>
   </div>
+
+    </div>
   </div>

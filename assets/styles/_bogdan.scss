@@ -270,12 +270,15 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: $highlight-color;
+
 }
 .table > thead > tr > th {
   font-weight: 400;
-  color: #757575;
+  color: $highlight-color;
+  font-family: $body-font;
   vertical-align: bottom;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba($highlight-color, 0.12);
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -286,7 +289,7 @@
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba($highlight-color, 0.12);
 }
 .table .table {
   background-color: #fff;
@@ -312,7 +315,7 @@
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
   border: 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $highlight-color;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -324,7 +327,7 @@
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba($highlight-color, 0.12);
 }
 @media screen and (max-width: 768px) {
   .table-responsive-vertical > .table {
@@ -340,7 +343,7 @@
   }
   .table-responsive-vertical > .table > tbody > tr {
     display: block;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $highlight-color;
     border-radius: 2px;
     margin-bottom: 1.6rem;
   }
@@ -355,7 +358,7 @@
     float: left;
     font-size: inherit;
     font-weight: 400;
-    color: #757575;
+    color: $highlight-color;
   }
   .table-responsive-vertical.shadow-z-1 {
     -webkit-box-shadow: none;
@@ -390,7 +393,7 @@
     background-color: #fff;
   }
   .table-responsive-vertical > .table-hover > tbody > tr > td:hover {
-    background-color: rgba(0, 0, 0, 0.12);
+    background-color: rgba($highlight-color, 0.12);
   }
 }
 .table-striped.table-mc-red > tbody > tr:nth-child(odd) > td,
@@ -543,7 +546,7 @@
 }
 .table-hover.table-mc-light-blue > tbody > tr:hover > td,
 .table-hover.table-mc-light-blue > tbody > tr:hover > th {
-  background-color: #b3e5fc;
+  background-color: rgba($highlight-color, 0.12);
 }
 @media screen and (max-width: 767px) {
   .table-responsive-vertical .table-striped.table-mc-light-blue > tbody > tr > td,

@@ -12,8 +12,8 @@
         <div class="menu-fold-out-list profile circle">
             <img id="wdw-admin" class="profile-icon btn-wdw" src="dist/images/profile.png" alt/>
             <div class="menu-list">
-                <a id="wdw-crudusers" href="javascript:void(0)" class="btn-wdw menu-item">Edit users</a>
-                <a id="wdw-crudevents" href="javascript:void(0)" class="btn-wdw menu-item">Edit events</a>
+                <a id="wdw-crudusers" href="javascript:void(0)" class="btn-wdw menu-item">Users</a><br>
+                <a id="wdw-crudevents" href="javascript:void(0)" class="btn-wdw menu-item">Events</a>
                 <hr>
                 <a id="btn-logout" href="javascript:void(0)" class="menu-item">Log out</a>
             </div>
