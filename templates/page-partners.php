@@ -1,7 +1,7 @@
 <!-- PARTNERS WINDOW -->
 <div class="wdw wdw-partners base-color-bg">
-    <div class="container">
-        <section class="horizontal-vertical-center box example-text secondary-color-bg">
+
+        <section class="horizontal-vertical-center landing-box example-text secondary-color-bg">
             <h6>TechCPH Partner <i class="fa fa-angle-right" aria-hidden="true"></i></h6>
             <h1>Share your knowledge and improve your network</h1>
             <p class="emphasis">
@@ -11,8 +11,9 @@
                 Hell of paleo schlitz, quinoa actually flexitarian umami fashion axe helvetica sriracha. Lomo artisan whatever, occupy actually chartreuse literally before they sold out gentrify umami keytar edison bulb cloud bread.
             </p>
         </section>
-
-<h2 class="highlight-color">Our partners / sponsors</h2>
+    <div class="container">
+<h2 class="highlight-color center">Our partners / sponsors</h2>
+        <!-- Close container -->
     </div>
     <div class="parteners-container card card-1">
     <div class="parteners-center">
@@ -49,4 +50,15 @@
     </div>
 
 
+    <section class="background-image partner-box  highlight-color-bg">
+
+        <div class="background-image-overlay-highlight-color horizontal-vertical-center">
+        <a id="wdw-contact" href="javascript:void(0)" class="btn-wdw btn btn-2">Become a partner now</a>
+        </div>
+    </section>
+
+    <?php
+    //INSERT FOOTER
+    include('templates/footer.php');
+    ?>
 </div>

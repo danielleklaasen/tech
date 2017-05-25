@@ -74,6 +74,9 @@ body{
 .warning-color-bg{
   background-color: $warning-color;
 }
+.warning-color-bg-light{
+  background-color: rgba($warning-color, 0.5);
+}
 
 
 /********************************************************************************

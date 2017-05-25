@@ -61,7 +61,10 @@ EXTENDS
 
 *********************/
 
-
+%box{
+  width: 100%;
+  @include border-radius(2px);
+}
 /*********************
 Background image
 *********************/

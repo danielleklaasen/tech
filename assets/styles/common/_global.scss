@@ -324,6 +324,7 @@ nav.main{
 .horizontal-vertical-center{
   @include flexbox();
   @include justify-content(center);
+  @include align-items(center);
 }
 
 .box{
@@ -331,6 +332,16 @@ nav.main{
   padding: 100px 0;
   @include border-radius(2px);
 }
+
+.partner-box{
+  @extend %box;
+  height: 400px;
+  margin-bottom: 0;
+}
+.landing-box{
+  @extend %box;
+}
+
 
 .example-find-flight{
   @include align-items(center);
@@ -522,6 +533,9 @@ nav.main{
   //background-image: url(../assets/images/yourUrl.jpg);
   &.home{
     background-image: url(../images/img19.jpg);
+  }
+  &.partner-box{
+    background-image: url(../images/img20.jpg);
   }
 }
 
