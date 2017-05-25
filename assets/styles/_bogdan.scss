@@ -785,3 +785,29 @@
     background-color: #ffccbc;
   }
 }
+
+/*************************** Parteners ******************************/
+
+.parteners-container{
+  @include flexbox();
+width: 95%;
+height: 90%;
+}
+
+.parteners-center{
+  @include flexbox();
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+
+}
+.partener{
+  @include flexbox();
+  width: 30%;
+  height: 28%;
+  margin: 1%;
+
+  background-color: $highlight-color;
+}
