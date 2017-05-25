@@ -320,10 +320,20 @@ $(document).on('click', '#btn-events', function(){
     if(!populated){
                 eventLoader();  
                 populated = true;
+
+
     }
+
+
 });
+var bool = false;
+$(document).on('click', '#menu-slider', function(){
+    if(!bool){
+        animateMenu();
+        bool = true;
+    }
 
-
+});
 //
 //                       _oo0oo_
 //                      o8888888o
@@ -419,7 +429,7 @@ function eventLoader(){
 var menu=$("#side-menu");
 function animateMenu(){
 (menu).animate({
-        bottom: '-=300'
+        bottom: '-=380'
     });
 }
 

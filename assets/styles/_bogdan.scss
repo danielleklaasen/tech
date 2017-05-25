@@ -834,11 +834,13 @@ svg {
 #side-menu{
     display: flex;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     justify-content: center;
     height: 100%;
     width: 300px;
- }
+  margin-top: -400px;
+
+}
 
 #menu-slider{
     margin-top: 20px;
