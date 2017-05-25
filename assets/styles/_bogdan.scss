@@ -65,9 +65,19 @@
 
 .event{
     @include flexbox();
-    @include flex-direction(row);
     width: 90vw;
     height: 65vh;
+    @include flex-direction(row);
+    @include breakpoint(tablet) {
+        flex-direction: column;
+        height: 130vh;
+         margin-top: 500px;
+  }
+  @include breakpoint(mobile) {
+        flex-direction: column;
+        height: 800px;
+        margin-top: 300px;
+  }
 
 }
 
@@ -81,6 +91,11 @@
     background-image: url('../../dist/images/img1-blur.png');
     background-size: cover;
     opacity: 1;
+    @include breakpoint(tablet) {
+    width: 100%;
+    height: 400px;
+  }
+    
 }
 
 .event-main-text{
@@ -103,6 +118,9 @@
     @include flex-direction(column);
     padding-left: 2vw;
     padding-right: 2vw;
+    @include breakpoint(tablet) {
+    width: 100%;
+  }
 }
 
 .event-image-holder{
@@ -175,7 +193,7 @@
     font-weight: 100;
 }
 
-/*************************** CONTACT FORM ***************/
+/*************************** CONTACT FORM ******************************/
 
 .contact-form{
     @include flexbox();
