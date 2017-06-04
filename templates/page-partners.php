@@ -13,6 +13,7 @@
             </p>
         </section>
     <div class="container">
+        <br><br>
 <h2 class="highlight-color center">Our partners / sponsors</h2>
         <!-- Close container -->
     </div>
