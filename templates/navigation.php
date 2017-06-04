@@ -31,7 +31,7 @@
     <a id="wdw-partners" href="javascript:void(0)" class="btn-wdw menu-item">partners</a>
     <a id="wdw-about" href="javascript:void(0)" class="btn-wdw menu-item">about</a>
     <a id="wdw-contact" href="javascript:void(0)" class="btn-wdw menu-item">contact</a>
-    <a id="wdw-template" href="javascript:void(0)" class="btn-wdw menu-item">// template</a>
+    <a id="wdw-template" href="javascript:void(0)" class="btn-wdw menu-item">// style guide</a>
 
     <div class="button-container">
         <button id="wdw-login" class="btn-wdw-login menu-item btn-2">Login</button>

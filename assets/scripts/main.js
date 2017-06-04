@@ -122,7 +122,6 @@ function fnOpenResults() {
  Open booking
  ********************************************************************************/
 $(document).on('click', '.btn-wdw-booking', function(){
-    console.log("open booking");
     fnOpenBooking();
 });
 
@@ -239,11 +238,16 @@ $('.wdw').on("scroll", function () { // Do this on scroll in .wdw
 function fnMenuEffectScroll(that) {
     if ($(that).scrollTop() > (windowHeight/10) ) {
         $('nav.main').addClass("nav-small");
+
+        if(!populated){
+            eventLoader();
+            populated = true;
+        }
+
     } else {
         $('nav.main').removeClass("nav-small");
     }
 }
-
 
 /********************************************************************************
  Smooth scrolling
@@ -261,12 +265,9 @@ $(document).on('click', 'a', function(event){
         $('.wdw.open').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top-100
         }, 500);
-        console.log("animating window");
 
     }
 });
-
-
 
 /********************************************************************************
 
@@ -283,6 +284,50 @@ $(document).on('click', '.btn-home', function(){
 
 $(document).on('click', '.btn-menu', function(){
     $('.menu').css('display','flex');
+});
+
+$(document).on('click', '.single-event', function(){
+    //open window single event
+    //set all windows to close
+    $('.wdw').removeClass('open');
+    //open the target window
+    var wdwClassToOpen = "wdw-event";
+
+    var wdwSelector = $('.wdw-event');
+//open it on top of the document
+    wdwSelector.animate({
+        scrollTop: wdwSelector.offset().top
+    });
+    //open matching window
+    wdwSelector.addClass('open');
+});
+
+
+var menu=$("#side-menu");
+function animateMenu(){
+    (menu).animate({
+        bottom: '-=380'
+    });
+}
+function fnCloseFilter() {
+    (menu).animate({
+        bottom: '+=380'
+    });
+}
+
+var bFilterOpen = false;
+$(document).on('click', '.btn-filter', function(){
+    if(!bFilterOpen){
+        animateMenu();
+        $('.btn-filter').html("Close filter");
+        bFilterOpen=true;
+
+    }else{
+        $('.btn-filter').html("Open filter");
+
+        fnCloseFilter();
+        bFilterOpen=false;
+    }
 });
 
 $(document).on('click', '.menu-item', function(){
@@ -318,7 +363,7 @@ $(document).on('mouseleave', '.menu-list', function(){
 
 $(document).on('click', '#btn-events', function(){
     if(!populated){
-                eventLoader();  
+                eventLoader();
                 populated = true;
 
 
@@ -326,14 +371,7 @@ $(document).on('click', '#btn-events', function(){
 
 
 });
-var bool = false;
-$(document).on('click', '#menu-slider', function(){
-    if(!bool){
-        animateMenu();
-        bool = true;
-    }
 
-});
 //
 //                       _oo0oo_
 //                      o8888888o
@@ -426,10 +464,5 @@ function eventLoader(){
         setTimeout(basicEvent,displaySpeed*i);
     }
 }
-var menu=$("#side-menu");
-function animateMenu(){
-(menu).animate({
-        bottom: '-=380'
-    });
-}
+
 

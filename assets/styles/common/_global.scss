@@ -134,6 +134,12 @@ hr{
     display: block;
   }
 }
+
+
+
+.single-event{
+  cursor: pointer;
+}
 /********************************************************************************
 
                                   NAVIGATION
@@ -686,31 +692,38 @@ nav.main{
       }
 
     }
-    .button-container{
-      margin-top: 30px;
-      width: 100%;
-      button, .btn{
+    .container{
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      @include flex-direction(column);
+      .button-container{
+        margin-top: 30px;
         width: 100%;
+        button, .btn{
+          width: 100%;
 
-      }
-      .btn{
-        &:first-child{
-          margin-bottom: 5px;
         }
-      }
-      @include breakpoint-mf(mobilelandscape){
-        width: 515px;
-        @include flexbox();
-        @include flex-direction(row);
-        @include justify-content(space-between);
         .btn{
           &:first-child{
-            margin-right: 15px;
-            margin-bottom: 0;
+            margin-bottom: 5px;
+          }
+        }
+        @include breakpoint-mf(mobilelandscape){
+          width: 515px;
+          @include flexbox();
+          @include flex-direction(row);
+          @include justify-content(space-between);
+          .btn{
+            &:first-child{
+              margin-right: 15px;
+              margin-bottom: 0;
+            }
           }
         }
       }
     }
+
   }
 
   &.background-image{
